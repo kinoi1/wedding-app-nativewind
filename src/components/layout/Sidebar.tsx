@@ -25,7 +25,7 @@ export default function Sidebar() {
   return (
     <View style={[styles.sidebar, collapse && styles.sidebarActive]}>
       {/* Daftar Menu */}
-      <View style={[main.justifyCenter, collapse && styles.sidebarBorder]}>
+      <View style={[main.justifyCenter,main.pr2, collapse && styles.sidebarBorder]}>
         <View style={[main.itemsCenter, main.mt4]}>
           <Pressable onPress={() => setCollapse(!collapse)}>
             <Menu color="gray" size={30} />
@@ -58,7 +58,7 @@ export default function Sidebar() {
         })}
       </View>
       {collapse && (
-        <View>
+        <View style={main.m4}>
           <Text>tes</Text>
         </View>
       )}
@@ -69,7 +69,7 @@ export default function Sidebar() {
 const styles = StyleSheet.create({
   sidebar: {
     flexDirection: "row",
-    width: 80,
+    width: 90,
     height: "100%",
     paddingLeft: 8,
     paddingRight: 8,
@@ -80,7 +80,7 @@ const styles = StyleSheet.create({
   },
   sidebarActive: {
     flexDirection: "row",
-    width: 200,
+    width: 300,
     height: "100%",
     paddingLeft: 8,
     paddingRight: 8,

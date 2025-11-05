@@ -53,7 +53,8 @@ const styles = StyleSheet.create({
   container: {
     display: "flex",
     flexDirection: "row",
-    height: "100%"
+    height: "100%",
+    backgroundColor: "#F5F0FE"
   },
   main: {
     height: "100%",

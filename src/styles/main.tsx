@@ -27,5 +27,18 @@ export default StyleSheet.create({
     },
     mt4: {
         marginTop: 16
+    },
+    mx4: {
+        marginLeft: 16,
+        marginRight: 16
+    },
+    m4: {
+        margin: 16
+    },
+    mr2: {
+        marginRight: 8
+    },
+    pr2: {
+        paddingRight: 8
     }
 })
